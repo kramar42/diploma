@@ -33,3 +33,16 @@
    :tMove '(:todo :implement)
    :tStone '(:todo :implement)
    :tCompose '(:tValueType ":" :tValueType)})
+
+(defn inside-circle? [x y]
+  (>= 1 (+ (* x x) (* y y))))
+
+(defn test-random-pair []
+  (inside-circle? (rand) (rand)))
+
+(defn PI [accuracy]
+  (* 4 (/
+         (count (filter true?
+                        (repeatedly accuracy test-random-pair)))
+         accuracy)))
+
