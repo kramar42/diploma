@@ -1,0 +1,41 @@
+\documentclass[a4paper,14pt]{scrartcl}
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[ukrainian,english]{babel}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\restylefloat{table}
+\usepackage[pdftex]{graphicx}
+\usepackage{chngcntr}
+\usepackage{titlesec}
+\titleformat*{\section}{\Large \normalfont \bfseries \center}
+\titleformat*{\subsection}{\large \normalfont \bfseries \center}
+
+\setlength{\headheight}{1cm}
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\oddsidemargin}{0.5cm}
+\setlength{\textheight}{25cm}
+\setlength{\textwidth}{16cm}
+\setlength{\parindent}{1cm}
+
+\renewcommand{\familydefault}{\rmdefault}
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+	\selectlanguage{ukrainian}
+	\input{title}
+	\tableofcontents
+	\pagestyle{plain}
+	\pagenumbering{arabic}
+	\input{intro}
+	\input{analize}
+	\input{realization}
+	\input{algorithms}
+	\input{compare}
+	\input{safety}
+	\input{other}
+\end{document}
