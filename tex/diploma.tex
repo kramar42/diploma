@@ -1,41 +1,83 @@
 \documentclass[a4paper,14pt]{scrartcl}
+
+% makes pdf searchable & copyable
 \usepackage{cmap}
+
+% input encoding
 \usepackage[utf8]{inputenc}
+
+% font encoding
 \usepackage[T2A]{fontenc}
+
+% add languages support
 \usepackage[ukrainian,english]{babel}
+
+% set one and half spacing size
 \usepackage{setspace}
+\onehalfspacing
+
+% indent first paragraph
 \usepackage{indentfirst}
+
+% for math symbols
 \usepackage{amsmath}
 \usepackage{amssymb}
+
+% so tables will stay in place
 \usepackage{float}
 \restylefloat{table}
-\usepackage[pdftex]{graphicx}
-\usepackage{chngcntr}
-\usepackage{titlesec}
-\titleformat*{\section}{\Large \normalfont \bfseries \center}
-\titleformat*{\subsection}{\large \normalfont \bfseries \center}
 
-\setlength{\headheight}{1cm}
+% include pictures
+\usepackage[pdftex]{graphicx}
+
+% change the settings of counters
+% \usepackage{chngcntr}
+
+% change sections formating
+\usepackage{titlesec}
+\titleformat*{\section}{\normalfont \bfseries \center}
+\titleformat*{\subsection}{\normalfont \bfseries}
+\titleformat*{\subsubsection}{\normalfont \bfseries \itshape}
+% add dot to the end of numbering
+\titlelabel{\thetitle. }
+
+% \usepackage{algpseudocode}
+
+% add option to all lists
+\usepackage{enumitem}
+\setitemize{parsep=0pt}
+\renewcommand{\labelitemi}{--}
+
+% specify page spacing
+\usepackage[top=2cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+% some more margins and indents
 \setlength{\evensidemargin}{0.5cm}
 \setlength{\oddsidemargin}{0.5cm}
 \setlength{\textheight}{25cm}
 \setlength{\textwidth}{16cm}
 \setlength{\parindent}{1cm}
 
+% specify font
 \renewcommand{\familydefault}{\rmdefault}
-\renewcommand{\baselinestretch}{1.5}
+
+% reformat table and figure numbering
+\renewcommand{\thetable}{\thesection .\arabic{table}}
+\renewcommand{\thefigure}{\thesection .\arabic{figure}}
+
+% don't display subsubsection in TOC
+\setcounter{tocdepth}{2}
 
 \begin{document}
 	\selectlanguage{ukrainian}
-	\input{title}
-	\tableofcontents
+	% \input{title}
+	% \tableofcontents
 	\pagestyle{plain}
 	\pagenumbering{arabic}
-	\input{intro}
-	\input{analize}
-	\input{realization}
-	\input{algorithms}
-	\input{compare}
-	\input{safety}
-	\input{other}
+	% \input{introduction}
+	% \input{solutions}
+	\input{implementation}
+	% \input{algorithms}
+	% \input{compare}
+	% \input{safety}
+	% \input{other}
 \end{document}

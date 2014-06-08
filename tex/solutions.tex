@@ -27,43 +27,55 @@
 \subsubsection{Методи Монте-Карло}
 Одією з головних альтернатив використанню жорстко запрограмованих методів пошуку --- використовувати методи Монте-Карло. Якщо говорити про го, то цей метод полягає в наступному:  згенеруємо список потенційних ходів, які ми хочемо перевірити; для кожного такого ходу зіграємо тисячу випадкових партій (тобто наступних випадкових ходів до остаточного кінця гри --- стану на дошці, при якому можливо точно визначити переможця); виберемо з списку ходів той, при якому найбільша кількість з випадкових партій виграна програмою.
 
-Перевага цього методу полягає в тому, що він потребує дуже малих знань про предметну область, у якій працює, недоліком є те, що він використовує більше пам'яті та процесорного часу.
+Перевага цього методу полягає в тому, що він потребує дуже малих знань про предметну область, у якій працює, недоліком є те, що він використовує більше пам'яті та процесорного часу. Однак через те, що ходи генеруються випадковим чином, ми можемо неправильно оцінити якість ходу. Наприклад, якщо у відповідь на якийсь хід буде згенеровано 100 ходів-відповідей, у більшості з який перший гравець виграє, ми будемо оцінювати цей хід як дуже сильний. Однак існує можливість того, що є дуже добра відповідь на наш хід, яка зведе нашу перевагу на нівець, однак, через те, що ми не згенерували цей хід, ми про це не дізнаємося. В результаті цього, програма буде сильна в загальному стратегічному сенсі, однак буде дуже слаба тактично. Цю проблему можна вирішити, якщо додати деякі проблемно-орієнтовні знання в генерацію ходів та підвищити глибину пошуку.
 
-The advantage of this technique is that it requires very little domain knowledge or expert input, the trade-off being increased memory and processor requirements. However, because the moves used for evaluation are generated at random it is possible that a move which would be excellent except for one specific opponent response would be mistakenly evaluated as a good move. The result of this are programs which are strong in an overall strategic sense, but are weak tactically. This problem can be mitigated by adding some domain knowledge in the move generation and a greater level of search depth on top of the random evolution.
-
-In 2006, a new search technique, upper confidence bounds applied to trees (UCT), was developed and applied to many 9x9 Monte-Carlo Go programs with excellent results. UCT uses the results of the play outs collected so far to guide the search along the more successful lines of play, while still allowing alternative lines to be explored. The UCT technique along with many other optimizations for playing on the larger 19x19 board has led MoGo to become one of the strongest research programs. Successful early applications of UCT methods to 19x19 Go include MoGo, Crazy Stone, and Mango. MoGo won the 2007 Computer Olympiad and won one (out of three) blitz game against Guo Juan, 5th Dan Pro, in the much less complex 9x9 Go. The Many Faces of Go won the 2008 Computer Olympiad after adding UCT search to its traditional knowledge-based engine.
+У 2006 році був створений новий пошуковий алгоритм, що був використаний для гри на дошках розміру 9x9 та зарекомендував себе дуже гарно. Він називається Upper Confidence Bounds algorithm і базується на методі Монте-Карло. Алгоритм UCT змінює правила за якими визначається важливість ходів у дереві пошуку. Він вибирає те піддерево, у якому вірогідність перемоги більше 50\%. Якщо ж не існує такого піддерева, то вибір робиться навмання.
 \subsection{Огляд існуючих програмних продуктів}
 Кожна програма, що грає в го повинна вміти ефективно шукати ходи/партії у своїй внутрішній базі данних. Однак партії з го мають важливе навчальне значення самі по собі. Тому існують програми, що єдиною своєю метою ставлять роботу з партіями го. Вони об'єднують багато партій в одну базу даних і маніпулюють єю. Розглянемо деякі з них.
 \subsubsection{Kombilo}
-Kombilo is a go database program. Its particular strength is searching for move patterns in a collection of SGF files (like searching for all games where a particular opening or a particular joseki is played). You can also search for other properties of the game (like players, events, date, ...).
+Kombilo --- програма, що працює з базою го ігор. Основне завдання такої програми --- пошук деяких підпослідовностей в колекції SGF-ігор (наприклад пошук усіх ігор з деяким початком). Також ця програма дозволяє шукати по деяким властивостям ігор (таким, як гравці, події, дати).
 
+Особливості програми:
 \begin{itemize}
-	\item You can search for full board patterns, or for patterns occurring in a corner, on the side or anywhere on the board. All patterns given by symmetries of the board are found as well, and also - unless you disable it - the pattern obtained by exchanging black and white.
-	\item Kombilo comes with a complete SGF editor: so you can add variations of your own, comment the game, add labels etc. The SGF editor can also handle collections, i.e. SGF files containing several games. The tree structure of the current game is shown in a separate window. You can rotate/mirror SGF files.
-	\item Kombilo has built in list of references to commentaries of games in the English go literature. (NB: Kombilo does not come with the game records, but recognizes the games by the Dyer signature.) Those games in your database which Kombilo finds in its list are marked in the game list, and in the game info a reference to the journal/book which has the commentary is given. Currently the list contains almost 2000 references, and includes references to the game commentaries in all issues of Go World, and in most English go books with game comentaries.
-	\item You can search for pieces of the game information, i.e. for player names, events, date, etc., and you can issue complex queries by directly accessing the underlying SQL database.
-	\item After any combination of searches, you can quickly have a date profile of the current list of games displayed.
-	\item You can refine pattern searches in many ways: by fixing who should move next in the search pattern, by allowing or disabling search for the pattern with black/white exchanged, by requiring that the pattern should occur before some specified point in the game (before move 50, say), by searching for move sequences, etc. By default, this version of Kombilo also searches in variations. The pattern search has been “parallelized” and hence can use several processor cores. Depending on your hardware, this results in a significant speed-up in comparison to older Kombilo versions.
+	\item Можливість пошуку як по повному ігровому поля, так і по позиціями у куті або на стороні дошки. Пошук ведеться також враховуючи симетрію та поворот. Існує можливість інвертувати пошук по кольору гравців, тобто поміняти їх місцями.
+	\item Kombilo також комплектується повним редактором SGF: тобто існує можливість редагувати файли, коментувати їх та інше. Також редактор дозволяє бачити дерево варіантів ігри. Він дозволяє повертати/віддзеркалювати ігри.
+	\item Kombilo також має у собі механізм по відображенню посилань. Цей механізм додає підказки до ігор, що впізнає. На поточний момент база цих посилань налічує 2000 записів.
+	\item Можливо використовувати складні запити, використовуючи напряму SQL-базу, що зберігає розпарсені ігри.
+	\item Можливо застосувати будь-яку комбінацію пошукових запитів, та у будь-який момент отримати список поточних ігор.
 \end{itemize}
+
+Говорячи про реалізацію програми, можна відзначити що вона написана на Python, тому може вважатися кроссплатформеною. Основне ж ядро, що присвячене пошуку, також написане на С++. Компілюючи його у модуль та підключаючи до основної програми ми отримаємо збільшення швидкодіє більше, ніж у два рази. Також це відкрита програма, і програмний код доступний для читання та аналізу.
 \subsubsection{Master Go}
-A commercial Go database program designed for searching patterns, such as when studying Fuseki and Joseki. The database contains 53059 professional games in a proprietary format (as of April 24 2011). Updates are available to all registered users.
+Це комерційна програма, що працює з базими даних гри го і призначена для пошуку поширених початків та розвитків ігор (вивченні фусекі і дзосекі). База даних містить 53059 професійних ігор у власному форматі. Оновлення доступні для всіх зареєстрованих користувачів.  Можливо додавати ігри в базу, що постачається з MasterGo шляхом придбання цих ігор в Японії, Китаї і Кореї і копіюванням їх в базу. Також Master Go працює тільки на операційній системі MS Windows.
 
-MasterGo stores its data in a proprietary format. One can add games to the set shipped with MasterGo. The MasterGo game database is compiled by purchasing Go books in Japan, China and Korea; copying game records from those books into the MasterGo game database. The makers of MasterGo regard this as a legitimate activity. (See kifu copyright discussion.) However, extracting games from the is regarded by the makers of MasterGo as a copyright violation. This is interesting. Copying by computer (from MasterGo or GoGoD) is regarded as a copyright violation. Velobici - edit Charles Matthews
-\subsubsection{GoBase}
-Welcome to GoBase.org, which was established as Go, An Addictive Game in October 1994 (a brief historical overview is available). On these pages you'll find a lot of information on the game of Go (Go is the western word for the game, in China the game is called wei ch'i, in Korea baduk). Of course, the Go rules are explained (in 8 languages), but you can also read about the history of Go, read stories and anecdotes related to Go, study the indepth study material, study baduk academy material in the problem section, connect to one of the online Go servers (reference: IGS clients) or retrieve information on Go and computers. You're really advised to browse around and see which topics are of special interest to you. 
+Якщо порівнювати цю програму з Kombilo, та можна помітити декілька речей: 1) Master Go, комерційна та платна програма 2) вона швидша, адже написана безпосередньо під одну платформу 3) вона використовує внутрішній формат даних, що також є не дуже зручним.
+\subsubsection{BiGo Assistant}
+BiGo Assistant --- програма для роботи з базами даних фусекі та джосекі, створена для гравців, що хочуть підняти свій рівень гри в го.
 
-The repository is your personal use of GoBase, the Go database program. You can create your own collection of games and analyse these games by executing GoBase searches on the main database of 48787 professional go games, 48665560 positions (as of June 2014). The games and GoBase search results will be saved for you and will only be accessible by you. A tutorial is available for the impatient.
+Основні особливості:
+\begin{itemize}
+	\item Можливість не тільки вивчати ігри го в цілому, але й переглядати ігри професіоналів у декільках режимах
+	\item Можливість вивчати початковий розвиток партії в го (фусекі) за прикладом бази даних професійних ігор
+	\item Також присутня база даних джосекі
+	\item Можливість аналізувати власні початки різних ігри
+	\item Динамічний інтерфейс --- можливість створення будь-якої кількості вікон з різними іграми
+	\item Можливість роздруковувати партії
+	\item Можливість застосувати до дошки всі 8 можливих перетворень (симетрія та поворот)
+	\item Програма відслідковує дублікати ігор
+	\item Можливість збирати статистику по списку ігор у вигляді статистики по варіаціям можливих рухів або оціночну статистику позицій у грі обох гравців
+	\item Пошук по заданій позиції (по одній або декільком частинам дошки)
+\end{itemize}
 
-шо зовсем нема помілок?
+Програма має багато можливостей, однак через те, що цікавим представляється тільки метод пошуку, ця програма має одну важливу відмінність від усліх інших: вона дозволяє шукати по декільком частинам дошки.
 
-Selecting the replay icon from the game listing will start up the online replay board. Do this now with one of the games you uploaded. If necessary create an SGF file with a few moves using one of the many freely available SGF editors.
-
-We will define a pattern and use GoBase to search for all games which contain the selected pattern. Move to the moment in the game which contains the position which you would like to search. Now you have to indicate the part of the board relevant for the search. This selection is done using the (sensitive) border just outside the board. This border is also used to display the board coordinates in case you have these turned on. You select one point on a vertical axis and one on a horizontal axis. These two points define one of the corners of a rectangle. The other is implicitly defined by them.
+Після аналізу можливостей існуючих рішень по темі дипломної роботи, можна ставити задачу по розробці власної програми, враховуючи 
 \subsection{Постановка задачі}
-Було вибрано реалізувати бібліотеку для мови Clojure, яка б містила деякі з запропонованих методів пошуку, а саме:
+Було вибрано реалізувати бібліотеку, яка б містила деякі з запропонованих методів пошуку, а саме:
 \begin{itemize}
 	\item Мінімаксний пошук по дереву
 	\item Порівняння зі зразком
 	\item Метод Монте-Карло
 \end{itemize}
-Ці методи були вибрані тому, що вони самі по собі не залежать від гри, а тількі від внутрішнього представлення цієї гри.  Також цим методам, на відміну від інших, не треба ``пояснювати'' правила го, вони можут працювати окремо і бути використані у іншому модулі для аналогічного пошуку у подібних структурах даних інших ігор.
+Ці методи були вибрані тому, що вони самі по собі не залежать від гри, а тількі від внутрішнього представлення цієї гри. Також цим методам, на відміну від інших, не треба ``пояснювати'' правила го, вони можут працювати окремо і бути використані у іншому модулі для аналогічного пошуку у подібних структурах даних інших ігор.
+
+Створити бібліотеку було вибрано тому, що це гарний спосіб інкапсулювати декілька реалізацій методу пошуку у структурах даних гри го. Також у такий спосіб інші програми або модулі можуть використовувати ці реалізації, більш піклуючись про інші аспекти гри.
