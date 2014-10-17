@@ -1,0 +1,41 @@
+\documentclass[dvips,14pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[ukrainian, russian, english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[pdftex]{graphicx}
+\usepackage{setspace}
+%\usepackage[dvips]{graphicx}
+
+\setlength{\headheight}{1cm}
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\oddsidemargin}{0.5cm}
+\setlength{\textheight}{25cm}
+\setlength{\textwidth}{16cm}
+\setlength{\parindent}{1cm}
+%\setlength{\parskip}{-0.2cm}
+
+
+
+\renewcommand{\familydefault}{\rmdefault}
+
+\usepackage{titlesec}
+\titleformat*{\section}{\Large \normalfont \bfseries \center}
+\titleformat*{\subsection}{\large \normalfont \bfseries \center}
+
+\begin{document}
+  \input{title}
+  \input{title2}
+  \pagestyle{empty}
+  \input{annot}
+  \newpage
+  \selectlanguage{ukrainian}
+  \renewcommand{\baselinestretch}{1.5}
+  \tableofcontents
+  \pagebreak
+  \pagestyle{plain}
+  \pagenumbering{arabic}
+  \input{intro}
+  \input{probl}
+  \input{stationary}
+\end{document}

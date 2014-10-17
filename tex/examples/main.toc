@@ -1,0 +1,18 @@
+\select@language {english}
+\select@language {ukrainian}
+\select@language {english}
+\select@language {ukrainian}
+\select@language {english}
+\select@language {ukrainian}
+\select@language {russian}
+\select@language {english}
+\select@language {ukrainian}
+\select@language {ukrainian}
+\contentsline {section}{\numberline {1}\IeC {\CYRV }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyru }\IeC {\cyrp }}{1}
+\select@language {ukrainian}
+\contentsline {section}{\numberline {2}\IeC {\CYRV }\IeC {\cyri }\IeC {\cyrv }\IeC {\cyrii }\IeC {\cyrd } \IeC {\cyrs }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyri } \IeC {\cyrr }\IeC {\cyrii }\IeC {\cyrv }\IeC {\cyrn }\IeC {\cyrya }\IeC {\cyrn }\IeC {\cyrsftsn } \IeC {\cyrd }\IeC {\cyrl }\IeC {\cyrya } \IeC {\cyro }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyru } \IeC {\cyrs }\IeC {\cyri }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyri }}{2}
+\select@language {ukrainian}
+\contentsline {section}{\numberline {3}\IeC {\CYRS }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrc }\IeC {\cyrii }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrr }\IeC {\cyrn }\IeC {\cyre } \IeC {\cyrr }\IeC {\cyrii }\IeC {\cyrv }\IeC {\cyrn }\IeC {\cyrya }\IeC {\cyrn }\IeC {\cyrn }\IeC {\cyrya } \IeC {\cyrt }\IeC {\cyra } \IeC {\cyrishrt }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyro } \IeC {\cyrr }\IeC {\cyro }\IeC {\cyrz }\IeC {\cyrv }'\IeC {\cyrya }\IeC {\cyrz }\IeC {\cyrk }\IeC {\cyri }}{4}
+\contentsline {subsection}{\numberline {3.1}\IeC {\CYRP }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrh }\IeC {\cyrii }\IeC {\cyrd } \IeC {\cyrd }\IeC {\cyro } \IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrc }\IeC {\cyrii }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrr }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyro } \IeC {\cyrr }\IeC {\cyrii }\IeC {\cyrv }\IeC {\cyrn }\IeC {\cyrya }\IeC {\cyrn }\IeC {\cyrn }\IeC {\cyrya } \IeC {\cyrt }\IeC {\cyra } \IeC {\cyrm }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyro }\IeC {\cyrd } \IeC {\cyrishrt }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyro } \IeC {\cyrr }\IeC {\cyro }\IeC {\cyrz }\IeC {\cyrv }'\IeC {\cyrya }\IeC {\cyrz }\IeC {\cyrk }\IeC {\cyru }}{4}
+\contentsline {subsection}{\numberline {3.2}\IeC {\CYRII }\IeC {\cyrs }\IeC {\cyrn }\IeC {\cyru }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyrn }\IeC {\cyrya } \IeC {\cyrv }\IeC {\cyre }\IeC {\cyrk }\IeC {\cyrt }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrh } \IeC {\cyrr }\IeC {\cyro }\IeC {\cyrz }\IeC {\cyrv }'\IeC {\cyrya }\IeC {\cyrz }\IeC {\cyrk }\IeC {\cyrii }\IeC {\cyrv }}{5}
+\contentsline {subsection}{\numberline {3.3}\IeC {\CYRT }\IeC {\cyri }\IeC {\cyrp }\IeC {\cyro }\IeC {\cyrv }\IeC {\cyrii } \IeC {\cyrr }\IeC {\cyro }\IeC {\cyrz }\IeC {\cyrv }'\IeC {\cyrya }\IeC {\cyrz }\IeC {\cyrk }\IeC {\cyri } \IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrc }\IeC {\cyrii }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrr }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyro } \IeC {\cyrr }\IeC {\cyrii }\IeC {\cyrv }\IeC {\cyrn }\IeC {\cyrya }\IeC {\cyrn }\IeC {\cyrn }\IeC {\cyrya }}{7}

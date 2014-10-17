@@ -1,0 +1,55 @@
+\newpage
+
+\selectlanguage{ukrainian}
+\section{Вивід системи рівнянь для опису системи}
+
+
+
+\hspace*{8mm} Основне рівняння, що описує еволюцію світла в подібних середовищах - нелінійне рівняння Шредінгера. Почнемо його вивід з рівнянь Максвела. З них можна отримати наступне хвильове рівняння (в параксіальному наближенні) для напруженості електричного поля пов'язаного з світловим пучком:
+\begin{equation}\label{eq:waveeq}
+\nabla^2 {\bf E} - \dfrac{1}{c^2}\frac{\partial^2 {\bf E}}{\partial^2 t} = \dfrac{1}{\epsilon_0 c^2}\frac{\partial^2 {\bf P}}{\partial^2 t}
+\end{equation}
+де $c$ - швидкість світла у вакуумі, $\epsilon_0$ - проникливість вакууму, ${\bf P}$ - поляризація.
+
+Ми розглядаємо випадок, коли хвиля розпосюджується по осі Z, а розсіюється та самофокусується по осях X та Y. До того ж, ми вважаємо світло квазімонохроматичним. В наближенні повільно змінюваної обвідної корисно було б виділити швидко змінювану частину:
+
+\begin{equation}\label{eq:qseq}
+{\bf E} = \dfrac{1}{2}[E({\bf r},t)exp(-i\omega_0 t) + c.c.]
+\end{equation}
+та\\
+
+\begin{equation}\label{eq:qseq2}
+E({\bf r},t) = A({\bf r})exp(-i\beta_0 Z)
+\end{equation}
+
+де $\beta_0 = k_0 n_0$ - постійна розповсюдження.
+Вважаємо що ${\bf P} = n_{nl} (|{\bf E}|^2){\bf E}$. Крім того, через те, що обідна повільно змінюється по осі Z, ми можемо знехтувати доданком $\frac{\partial^2 A}{\partial^2 Z}$ та врешті-решт отримаємо:
+
+
+\begin{equation}\label{eq:almNLS}
+2i\beta_0 \frac{\partial A}{\partial Z} + \frac{\partial^2 A}{\partial^2 X} + \frac{\partial^2 A}{\partial^2 Y} + 2\beta_0 k_0 nl(I)A = 0
+\end{equation}
+
+або, після обезрозмірення:
+
+\begin{equation}\label{eq:NLS1} 
+i\partial_z \Psi+\Delta_\perp\Psi +\theta\Psi=0
+\end{equation}
+
+Коефіцієнт заломлення, в свою чергу рахується таким чином:
+
+\begin{equation}
+\alpha^2\,\theta-\Delta_\perp\theta=I
+\end{equation}
+
+де $I$ - інтенсивність світла, $\alpha$ - параметр нелокальності. Як бачимо, коефіцієнт для заломлення залежить не лише від інтенсивності в даній точці, але від інтенсивності у всіх точках перерізу.
+
+Для двохкомпонентного пучку (векторного вихору) отримуємо наступну систему:
+\begin{equation}
+   \begin{array}{l} {\displaystyle
+       i\partial_z \Psi_n+\Delta_\perp\Psi_n +\theta\Psi_n=0,
+       } \\*[9pt] {\displaystyle
+\alpha^2\,\theta-\Delta_\perp\theta=|\Psi_1|^2+|\Psi_2|^2.
+   }\end{array}
+   \label{eq:NLS}
+\end{equation}
