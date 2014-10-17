@@ -1,0 +1,31 @@
+(;SZ[19]KM[5.5]EV[27th Meijin Final]RO[Game 4]DT[2002-10-16,17]PC[Kyoto]PB[Yoda Norimoto]BR[Meijin]PW[Cho Chikun]WR[9d]RE[B+0.5]US[JBvR]SO[Asahi Site];B[qd];W[dd];B[pp];W[dp]C[This is a predictable move for white. This is Cho's normal response.]
+;B[oc]C[And this is Yoda's favourite in this position.];W[qj]C[The standard response (for everybody). Other moves can be called unsuccesful fuseki experiments.];B[cn]LB[fq:a][cj:b][qh:c]C[Unexpected move. Yoda usually plays a. Yoda has his own views about this situation.  The standard moves are b or c, but Yoda has almost never plays them.
+
+Opening theory is flexible, this move has been played quite frequently in China.];W[fq]LB[cl:a]C[Normal response, white a is also common.];B[cf]LB[bp:a]C[Another unexpected move, and quite a challenge. Cho thought a long time about his reply. 
+
+In Game 1 of previous years' Meijin Final against Rin Kaiho, Yoda played the more usual a (and won). Of course Cho knew about that game. ];W[fc]LB[dj:a][di:b][dh:c]C[Other choices were a-c. ]
+;B[dj]LB[ch:a][cl:b]C[Almost the only move, but leaves invasion points a and b open for white to use.];W[qm]LB[qg:a]C[Another option was a (R13).  I have no idea which is better.];B[mq];W[qq]C[A modern move.];B[qp];W[pq];B[op]LB[nr:a][oq:b][or:c]C[Now white has 3 options:-a, b or c.
+c looks strange, but has been played  quite frequently. Black can tenuki though, so it might not be a good choice here.
+
+And there seems to be nothing wrong with b either. ]
+;W[nr];B[nq];W[mr];B[rq]LB[lr:a]C[B chooses this varation, because after a he would only get a wall facing the two white stones. Now he gets some profit as well. But he loses sente.];W[rr];B[or];W[rp];B[lr]LB[oq:a]C[Black a is also possible.];W[ch]C[Time to invade!]
+;B[dh];W[cl];B[cg];W[dn];B[co];W[do];B[cp];W[cq];B[bq];W[cm];B[cr];W[dq];B[ao]C[End of day 1
+]
+;W[bd];B[qh];W[iq];B[ro];W[sq];B[qn];W[pm];B[pr];W[qr];B[so];W[sp];B[jd];W[pd]
+;B[pc];W[qe];B[rd];W[ph];B[pg];W[oh];B[qi];W[pj];B[qf];W[mm];B[ng];W[ci];B[eg]
+;W[mi];B[gc];W[fd];B[fb];W[eb];B[lh];W[kf];B[li];W[le];B[mj];W[lc];B[nk];W[ol]
+;B[kc];W[mb];B[he];W[ne];B[md];W[ld];B[me];W[mf];B[nd];W[jg];B[hg];W[ji];B[ih]
+;W[jh];B[lg];W[lf];B[nf];W[cj];B[hj];W[jk];B[gb];W[ic];B[jb];W[fh];B[ec];W[ed]
+;B[cc];W[cb];B[cd];W[bc]C[Is this the position before the dinner break on day 2?];B[ij];W[gf];B[hf];W[jj];B[fg];W[di];B[gh];W[eh];B[dg]
+;W[hl];B[jr];W[gi];B[gk];W[oj];B[nh];W[fj];B[fk];W[ek];B[gg];W[oq];B[no];W[ps]
+;B[ms];W[os];B[kp];W[lk];B[lb];W[la];B[kb];W[mc];B[ir];W[hq];B[fm];W[pa];B[ob]
+;W[oa];B[qa];W[ma];B[qb];W[rj];B[ce];W[dc];B[bb];W[ab];B[ln];W[mn];B[mo];W[lm]
+;B[kn];W[sh];B[rg];W[rm];B[hr];W[gr];B[gp];W[go];B[sr];W[ss];B[fp];W[fo];B[hp]
+;W[gq];B[ho];W[hn];B[in];W[ep];B[jo];W[bn];B[bo];W[dr];B[br];W[ip];B[io];W[gd]
+;B[hd];W[og];B[of];W[el];B[bh];W[bi];B[bg];W[be];B[ib];W[hm];B[gm];W[nc];B[od]
+;W[hi];B[ii];W[bm];B[em];W[dm];B[nl];W[nm];B[on];W[lj];B[ni];W[nj];B[mk];W[ok]
+;B[mh];W[ml];B[mi];W[om];B[kl];W[pn];B[jl];W[ik];B[qo];W[ri];B[rh];W[si];B[fs]
+;W[sg];B[sf];W[gs];B[ds];W[hc];B[hb];W[jq];B[kq];W[ff];B[ea];W[da];B[fa];W[ba]
+;B[jf];W[kg];B[ll];W[gn];B[je];W[ig];B[hh];W[ai];B[an];W[am];B[hs];W[if];B[ie]
+;W[ka];B[ja];W[er];B[es];W[fr];B[cs];W[ns];B[ls];W[rn];B[sn];W[sm];B[en];W[eo]
+;B[km];W[im];B[jm])
