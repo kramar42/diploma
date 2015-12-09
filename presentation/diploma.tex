@@ -1,0 +1,164 @@
+\documentclass{diploma}
+
+
+% makes pdf searchable & copyable
+% \usepackage{cmap}
+
+% input encoding
+% \usepackage[utf8]{inputenc}
+
+% font encoding
+% \usepackage[T2A]{fontenc}
+
+% add languages support
+% \usepackage[ukrainian,english]{babel}
+
+\begin{document}
+% \maketitlepage{Борисенко Павло Борисович}{КМ-02}{ст. викл. Любашенко Н.Д.}{доцент, к. ф.-м. н. Шубенкова І.А.}{Система паралельного пошуку}
+
+% \assigment{
+    % StudentName={Борисенку Павлу Борисовичу},
+    % ThesisName={\invcommas{Моделювання процесів конвекції-дифузії з переважанням дифузії}},
+    % AdvisorName={ст. викладач Любашенко Наталія Дмитрівна},
+    % Order={\invcommas{28}~травня~2014~р.~\No~995-C},
+    % ApplicationDate={\invcommas{15}~червня~2014~р.},
+    % InputData={\begin{itemize}
+            % \item алгоритм методу граничних елементів;
+            % \item дані задачі дифузії.
+        % \end{itemize}},
+    % Contents={\begin{itemize}
+            % \item аналіз існуючих методів вирішення задачі;
+            % \item вибір омтимального методу;
+            % \item програмна реалізація;
+            % \item порівняння результатів.
+        % \end{itemize}},
+    % Graphics={\begin{itemize}
+            % \item блок-схеми алгоритмів;
+            % \item знімки екранних форм.
+        % \end{itemize}},
+    % AssigmentDate={\invcommas{01}~жовтня~2013~р.},
+    % Calendar={& & & \\},
+    % StudentPIB={Борисенко П.Б.},
+    % AdvisorPIB={Любашенко Н.Д.}
+% }
+
+% set one and half spacing size
+% \usepackage{setspace}
+% \onehalfspacing
+% \renewcommand{\baselinestretch}{1.4}
+
+% indent first paragraph
+% \usepackage{indentfirst}
+
+% for math symbols
+% \usepackage{amsmath}
+% \usepackage{amssymb}
+
+% so tables will stay in place
+% \usepackage{float}
+% \restylefloat{table}
+
+% include pictures
+% \usepackage[pdftex]{graphicx}
+
+% change the settings of counters
+% \usepackage{chngcntr}
+
+% change sections formating
+% \usepackage{titlesec}
+% \titleformat*{\section}{\normalfont \bfseries \center}
+% \titleformat*{\subsection}{\normalfont \bfseries}
+% \titleformat*{\subsubsection}{\normalfont \bfseries \itshape}
+% add dot to the end of numbering
+% \titlelabel{\thetitle. }
+
+% write pseudocode examples
+% \usepackage{algpseudocode}
+
+% \usepackage{etoolbox}
+% \newfontfamily{\codefont}{Menlo}
+% \AtBeginEnvironment{algorithmic}{\codefont}
+
+% add option to all lists
+% \usepackage{enumitem}
+% \setitemize{parsep=0pt}
+% \renewcommand{\labelitemi}{--}
+
+% specify page spacing
+% \usepackage[top=2cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+% some more margins and indents
+% \setlength{\evensidemargin}{0.5cm}
+% \setlength{\oddsidemargin}{0.5cm}
+% \setlength{\textheight}{25cm}
+% \setlength{\textwidth}{16cm}
+% \setlength{\parindent}{1cm}
+
+% specify font
+% \renewcommand{\familydefault}{\rmdefault}
+
+% reformat table and figure numbering
+% \renewcommand{\thetable}{\thesection .\arabic{table}}
+% \renewcommand{\thefigure}{\thesection .\arabic{figure}}
+
+% don't display subsubsection in TOC
+% \setcounter{tocdepth}{2}
+% \pagestyle{plain}
+% \pagenumbering{arabic}
+
+	\selectlanguage{ukrainian}
+
+    \maketitlepage{Крамаренко Олексій Андрійович}{КП-01}
+        {ст. викл. Любашенко Н.Д.}{доцент, к. ф.-м. н. Шубенкова І.А.}
+        {Система паралельного пошуку у структурах даних гри Го}
+        {асистент Онай М.В. }
+
+    \assigment{
+        StudentName={Борисенку Павлу Борисовичу},
+        ThesisName={\invcommas{Моделювання процесів конвекції-дифузії з переважанням дифузії}},
+        AdvisorName={ст. викладач Любашенко Наталія Дмитрівна},
+        Order={\invcommas{28}~травня~2014~р.~\No~995-C},
+        ApplicationDate={\invcommas{15}~червня~2014~р.},
+        InputData={\begin{itemize}
+                \item алгоритм методу граничних елементів;
+                \item дані задачі дифузії.
+            \end{itemize}},
+        Contents={\begin{itemize}
+                \item аналіз існуючих методів вирішення задачі;
+                \item вибір омтимального методу;
+                \item програмна реалізація;
+                \item порівняння результатів.
+            \end{itemize}},
+        Graphics={\begin{itemize}
+                \item блок-схеми алгоритмів;
+                \item знімки екранних форм.
+            \end{itemize}},
+        AssigmentDate={\invcommas{01}~жовтня~2013~р.},
+        Calendar={& & & \\},
+        StudentPIB={Борисенко П.Б.},
+        AdvisorPIB={Любашенко Н.Д.}
+    }
+
+    \input{abstract}
+
+    \tableofcontents
+
+
+	\input{introduction}
+
+	\input{solutions}
+
+	% \input{implementation}
+
+	% \input{algorithms}
+
+	% \input{compare}
+
+	% \input{safety}
+
+    \conclusion
+
+    Деякі висновки.
+
+    \input{bibliography}
+
+\end{document}
