@@ -1,0 +1,36 @@
+(
+;FF[4]
+ GM[1]
+ CA[utf-8]
+ AP[Goban:4.2]
+ US[Alexey Kramarenko]
+ DT[2013-09-12]
+ SZ[19]
+ HA[0]
+ KM[0.5]
+ RU[Japanese]
+ BR[NR]
+ PB[Alexey Kramarenko]
+ WR[NR]
+ PW[Alexey Kramarenko]
+;B[pd]
+(
+  ;W[dc];B[qp];W[dp];B[oq];W[de];B[pj];W[nc];B[pf];W[jd];B[cj]
+  ;W[ch];B[cn];W[fp];B[bp];W[cq];B[dl];W[jq];B[lq];W[jo];B[pm]
+  ;W[pb];B[qc];W[ne];B[hc];W[jc];B[he];W[gd];B[hd];W[jf];B[hg]
+  ;W[jh];B[hi]
+)
+(
+  ;W[dp]
+  (
+    ;B[pq];W[dd];B[po];W[jq];B[cn];W[fp];B[bp];W[cq];B[ck];W[qj]
+    ;B[ql];W[qg];B[mc];W[rd];B[fc];W[cf];B[db];W[cc];B[hd];W[pc]
+    ;B[oc];W[qc];B[oe];W[mq];B[ch];W[cb];B[je]
+  )
+  (
+    ;B[pp];W[dd];B[pj];W[dj];B[jp];W[nc];B[pf];W[pb];B[qc];W[kc]
+    ;B[fq];W[dn];B[pn];W[lq];B[kq];W[lp];B[jn];W[pq];B[qq];W[oq]
+    ;B[qr];W[op];B[po];W[ln];B[fc];W[ec];B[fd];W[df];B[ic];W[dq]
+    ;B[fo]
+  )
+))

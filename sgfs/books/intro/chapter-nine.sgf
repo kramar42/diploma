@@ -1,0 +1,182 @@
+(
+;FF[4]
+ GM[1]
+ AP[Goban:4.2]
+ SZ[19]
+ HA[9]
+ KM[0.5]
+ RU[Japanese]
+ AB[dd][dj][dp][jd][jj][jp][pd][pj][pp]
+ US[Alexey Kramarenko]
+ DT[2013-08-31]
+ RE[B+51.5]
+ CA[utf-8]
+ BR[NR]
+ PB[Alexey Kramarenko]
+ WR[NR]
+ PW[Alexey Kramarenko]
+;N[Small knight's approach move against the star-point stone]W[nc]
+;N[Small knight's extension from star-point stone]B[qf]
+;W[fc];B[cf];W[jf];B[oc];W[nd];B[nb];W[mb];
+ N[White must defend]B[ob]
+(
+  ;W[lc]
+  (
+    ;B[ec]
+    ;W[fd];B[fb];W[gb];B[eb];W[hc];B[fq];W[qn];B[nq];W[cn];B[co]
+    ;W[dn];B[bn];W[bm];B[bo];W[cl];B[bk];W[el];
+     N[Big move]B[dh]
+    ;N[Common white handicap move]W[qq]
+    ;B[qp];W[rp];B[ro];W[rq];B[qo];W[or];B[oq];W[nr];B[mq];W[ql]
+    ;B[qj];W[ol];B[nj];W[ml];B[lj];W[kl];B[of];W[mf];
+     N[Separate white's groups]B[il]
+    ;W[kn];
+     N[White must defend]B[mr]
+    (
+      ;W[oo]
+      ;B[pr];W[pq];B[os];W[qr];B[ns];W[rs];B[sr]
+    )
+    (
+      ;W[pq];B[hp];W[oo];B[op];W[lp];B[kq];W[fo];B[fp];W[cj];B[ck]
+      ;W[dk];B[ci];W[ej];B[bj];W[ei];B[fk];W[ek];B[hj];W[mi]
+      (
+	;B[ni];W[mj];B[mk];W[lk];B[nk];W[kj];B[li]
+	(
+	  ;W[ki]
+	  (
+	    ;B[lh];W[mh];B[kh];W[in]
+	  )
+	  (
+	    ;B[mh]
+	  )
+	)
+	(
+	  ;W[mh]
+	)
+      )
+      (
+	;B[mj];W[og];B[pg];W[oh];B[ph];W[oi];B[oj];W[ef];B[df]
+	;W[ii];B[ij];W[ki];B[kj];W[hi];B[ji];W[jh];B[li];W[lg]
+	;B[kh];W[jg];B[eg];W[ff];B[fg];W[gg];B[no];W[nn];B[mo]
+	;W[mn];B[lo];W[rk];B[rj];W[sj];B[si];W[sk];B[rh];W[oe]
+	;B[pe];W[nf];B[pf];W[rn];B[sn];W[sm];B[so];W[pn];B[ns]
+	;W[ps];B[go];W[ed];B[cc];W[eo];B[ep];W[gn];B[hn];W[gm]
+	;B[rm];W[sl];B[qk];W[rl];B[pl];W[qm];B[in];W[gk];B[gj]
+	;W[fj];B[mh];W[ng];B[od];W[ne];B[gl];W[fl];B[hl];W[ko]
+	;B[kp];W[pm];B[lm];W[ln];B[ll];W[lk];B[kk];W[km];B[mk]
+	;W[mm];B[nl];W[nm];B[ok];W[nk];B[po];
+	 LB[om:a][rm:b][nl:1][pk:2]W[on]
+	;B[ni];W[di];B[cj];W[jo];B[io];W[bl];B[gh];W[hh];B[hg]
+	;W[gf];B[gi];W[ih];B[kg];W[kf];B[mg];W[pi];B[qi];W[eh]
+	;B[ch];W[fh];B[dg];W[sp];B[ms];W[rs];B[os];W[pr];B[ma]
+	;W[la];B[na];W[fa];B[ea];W[ga];B[ee];W[fe];B[de];W[lk]
+	;B[ll];W[an];B[ao];W[am];B[hk];W[jl];B[jk];W[ak];B[aj]
+	;W[al];B[do];W[fk];B[lh];W[lf];B[hm];W[en];B[jm];W[jn]
+	;B[im];W[nl];B[pk];W[lm];B[lk];W[fi];B[nh];W[];
+	 TW[cm][dl][dm][em][fm][fn][gc][gd][ge][ha][hb][hd][he]
+	  [hf][hg][ia][ib][ic][id][ie][if][ig][ja][jb][jc][jd]
+	  [je][ka][kb][kc][kd][ke][lb][ld][le][mc][md][me][om]
+	  [qr][qs][rm][rr][sq][sr][ss]
+	 TB[aa][ab][ac][ad][ae][af][ag][ah][ai][ap][aq][ar][as]
+	  [ba][bb][bc][bd][be][bf][bg][bh][bi][bp][bq][br][bs]
+	  [ca][cb][cd][ce][cg][cp][cq][cr][cs][da][db][dc][dq]
+	  [dr][ds][eq][er][es][fr][fs][gp][gq][gr][gs][ho][hq]
+	  [hr][hs][ik][ip][iq][ir][is][jq][jr][js][ki][kr][ks]
+	  [lp][lq][lr][ls][mi][mp][np][oa][pa][pb][pc][qa][qb]
+	  [qc][qd][qe][qg][qh][ra][rb][rc][rd][re][rf][rg][ri]
+	  [sa][sb][sc][sd][se][sf][sg][sh]
+	 TT[]B[]
+      )
+    )
+  )
+  (
+    ;B[db]
+    ;AB[eb]
+     AW[db]
+  )
+)
+(
+  ;W[db]
+  (
+    ;TR[jd]
+     LB[lc:a][lb:b]B[mc]
+    (
+      ;W[lc]
+      ;B[md];W[me];B[ld];W[kd];B[le];W[lf];
+       AW[mc]B[ke]
+      ;AW[mc]
+    )
+    (
+      ;W[lb]
+      ;B[md];W[ne];B[kc]
+    )
+  )
+  (
+    ;B[lb];
+     AE[mc]
+     AW[lb]
+  )
+))
+(
+;FF[4]
+ GM[1]
+ AP[Goban:4.2]
+ SZ[19]
+ HA[0]
+ KM[0.0]
+ CA[iso-8859-1]
+ US[Alexey Kramarenko]
+ DT[2013-08-31]
+ AW[lq][lr][mq][ms][np][op][pp][qp][rp][rr][sq]
+ AB[mr][nq][nr][oq][os][pq][qq][qr][rq]
+ AE[kr][ns]
+ BR[NR]
+ PB[Alexey Kramarenko]
+ WR[NR]
+ PW[Alexey Kramarenko]
+(
+  ;B[qs]
+  ;W[pr]
+  (
+    ;B[sr];W[ss];B[rs];W[sp];B[sr]
+  )
+  (
+    ;B[rs]
+  )
+)
+(
+  ;
+))
+(
+;FF[4]
+ GM[1]
+ AP[Goban:4.2]
+ SZ[19]
+ HA[0]
+ KM[0.0]
+ CA[iso-8859-1]
+ US[Alexey Kramarenko]
+ DT[2013-08-31]
+ AW[lq][lr][mq][ms][np][op][pp][qp][rp][rr][sq]
+ AE[qs]
+ AB[mr][nq][nr][oq][os][pq][qq][qr][rq]
+ BR[NR]
+ PB[Alexey Kramarenko]
+ WR[NR]
+ PW[Alexey Kramarenko]
+(
+  ;B[qs]
+  ;W[pr];B[sr];W[ss];B[rs];W[sp];B[sr]
+)
+(
+  ;B[qo]
+)
+(
+  ;B[pq]
+)
+(
+  ;B[qo]
+)
+(
+  ;
+))
