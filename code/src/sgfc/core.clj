@@ -15,7 +15,7 @@
 (def uc-letters (gen-letters \A \Z))
 (def uc-board-letters (remove #{\I} (gen-letters \A \T)))
 (def board-letters ((comp set s/lower-case s/join) uc-board-letters))
-(def numbering (zipmap board-letters (range 19)))
+(def numbering (zipmap board-letters (range 1 20)))
 
 ;; Working with SGF-files
 (defn lazy-read [file len]
