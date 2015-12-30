@@ -3,7 +3,8 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.5.1"],
-                 [criterium "0.4.2"]]
+  :dependencies [[org.clojure/clojure "1.7.0"],
+                 [criterium "0.4.3"]
+                 [com.taoensso/timbre "4.2.0"]]
   :main sgfc.core
   :profiles {:uberjar {:aot :all}})
